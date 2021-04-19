@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-size: 15px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      header {
+        text-align: center;
+      }
+      span,
+      p {
+        color: hsl(229, 6%, 66%);
+      }
+      span {
+        font-weight: 200;
+      }
+      section {
+        width: 80vw;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        width: 300px;
+        height: 200px;
+        box-shadow: 0px 3px 20px 0px #d2d2d2;
+        margin: 1rem;
+        padding: 10px;
+        position: relative;
+        line-height: 1.7;
+      }
+      .Supervisor {
+        border: 3px solid;
+        border-color: hsl(180, 62%, 55%) transparent transparent transparent;
+      }
+      .team {
+        border: 3px solid;
+        border-color: hsl(0, 78%, 62%) transparent transparent transparent;
+      }
+      .karma {
+        border: 3px solid;
+        border-color: hsl(34, 97%, 64%) transparent transparent transparent;
+        margin-top: 2rem;
+      }
+      .calculator {
+        border: 3px solid;
+        border-color: hsl(212, 86%, 64%) transparent transparent transparent;
+      }
+      img {
+        width: 15%;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        pointer-events: none;
+      }
+
+      @media (max-width: 900px) {
+        section {
+          flex-direction: column;
+        }
+        header {
+          width: 80vw;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Heading -->
+    <header>
+      <h1>
+        <span> Reliable, efficient delivery</span>
+        <br />
+        Powered by Technology
+      </h1>
+
+      <p>
+        Our Artificial Intelligence powered tools use millions of project data
+        <br />
+        points to ensure that your project is successful
+      </p>
+    </header>
+
+    <!-- Section -->
+    <main>
+      <section>
+        <div class="parent">
+          <div class="card Supervisor">
+            <h3>Supervisor</h3>
+            <p>Monitors activity to identify project roadblocks</p>
+            <img src="./images/icon-supervisor.svg" alt="Supervisor" />
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="card team">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <img src="./images/icon-team-builder.svg" alt="Team Builder" />
+          </div>
+
+          <div class="card karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="./images/icon-karma.svg" alt="Karma" />
+          </div>
+        </div>
+
+        <div class="parent">
+          <div class="card calculator">
+            <h3>Calculator</h3>
+            <p>
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <img src="./images/icon-calculator.svg" alt="Calculator" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/sahir2008"
+          target="_blank"
+          >Sahir Mohsen</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
